@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Accent palette as RGB channel values so Tailwind opacity modifiers work:
+  bg-accent/10, text-accent/80, etc.
+
+  To retheme: change these two lines only.
+*/
+:root {
+  --color-accent: 31 78 121; /* #1F4E79 — deep blue */
+}
+.dark {
+  --color-accent: 96 165 250; /* #60A5FA — blue-400, readable on dark bg */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem; /* compensate for sticky nav */
+  }
+
+  body {
+    @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/20;
+  }
+}
