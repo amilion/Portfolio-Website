@@ -3,7 +3,20 @@
     "allow": [
       "Bash(npm install *)",
       "PowerShell(Get-Command node -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; Get-Command npm -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source; $env:PATH -split ';' | Where-Object { $_ -match 'node|npm' })",
-      "PowerShell(Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object Name -First 5; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'node|nvm' } | Select-Object Name)"
+      "PowerShell(Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object Name -First 5; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'node|nvm' } | Select-Object Name)",
+      "Bash(npm run *)",
+      "Bash(npm --version)",
+      "Bash(command -v nvm)",
+      "Read(//home/amilion/.nvm/**)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4173/Amirreza_Ahadzadeh_Resume.pdf)",
+      "Bash(curl -s -I http://localhost:4173/Amirreza_Ahadzadeh_Resume.pdf)",
+      "Bash(curl -s http://localhost:4173/)",
+      "Bash(curl -s http://localhost:4173/assets/index-C-gsn6mu.js)",
+      "Bash(curl -s http://localhost:4173/Amirreza_Ahadzadeh_Resume.pdf)",
+      "Bash(pkill -f \"vite preview\")"
     ]
   }
 }
