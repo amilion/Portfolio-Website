@@ -55,8 +55,8 @@ const content = {
     phone: '+49 1520 248 0245',
     github: 'https://github.com/amilion',
     // ↓ Add your LinkedIn profile URL here when ready
-    linkedin: '',
-    resumeUrl: '/resume.pdf',
+    linkedin: 'https://www.linkedin.com/in/amirreza-ahadzadeh-99a972215/',
+    resumeUrl: '/Amirreza_Ahadzadeh_Resume.pdf',
   },
 
   about: `Final-year Computer Science student at the University of Tehran (GPA 19.0/20) and software engineer who builds systems from the ground up. Strong in Python, C++, and C with solid algorithmic foundations. I enjoy implementing machine-learning models and algorithms from scratch, building full-stack REST applications, and doing computational-neuroscience research on spiking neural networks.`,

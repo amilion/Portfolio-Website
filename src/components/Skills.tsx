@@ -1,10 +1,13 @@
-import { SectionWrapper } from './SectionWrapper'
-import { SectionHeading } from './SectionHeading'
-import content from '../data/content'
+import { SectionWrapper } from "./SectionWrapper";
+import { SectionHeading } from "./SectionHeading";
+import content from "../data/content";
 
 export function Skills() {
   return (
-    <SectionWrapper id="skills" className="py-24 bg-slate-50/60 dark:bg-slate-900/30">
+    <SectionWrapper
+      id="skills"
+      className="py-24 bg-slate-50/60 dark:bg-slate-900/30"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-8">
         <SectionHeading index="02" title="Skills" />
 
@@ -29,5 +32,5 @@ export function Skills() {
         </div>
       </div>
     </SectionWrapper>
-  )
+  );
 }
